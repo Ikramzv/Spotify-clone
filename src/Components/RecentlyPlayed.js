@@ -14,7 +14,8 @@ function RecentlyPlayed() {
         let result = recentlyPlayed?.items.reduce((initial , item) => {
             initial[initial.length] = item
             return initial 
-        },[]) 
+        },[]) // This block code is actually meaningless so these block code's result is already equal to recentlyPlayed.items
+
 
         result && result.forEach(item => {
             if(unique.some(el => el?.track?.name == item?.track?.name)) {
@@ -23,6 +24,8 @@ function RecentlyPlayed() {
         })
         return unique
     }    
+
+    // Function right above removes duplicate object inside recentlyPlayed.items
 
   return (
     <div className='container' >
