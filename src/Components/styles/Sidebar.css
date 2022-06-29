@@ -8,6 +8,7 @@
     color: white;
     min-width: 230px;
     padding-inline: 10px;
+    padding-bottom: 120px;
     overflow-y: auto;
 }
 

@@ -8,7 +8,7 @@ function Header() {
 
     const [{ user } , dispatch] = useDateLayerValue()
 
-  return (
+    return (
     <div className='header' >
         <div className='header_left'>
             <SearchIcon cursor={'pointer'} />

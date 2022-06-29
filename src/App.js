@@ -49,6 +49,13 @@ function App() {
         })
       })
 
+      spotify.getMyRecentlyPlayedTracks().then((tracks) => {
+        dispatch({
+          type: 'SET_RECENTLY_PLAYED_TRACKS',
+          tracks: tracks
+        })
+      })
+
       return memoize
     }
   },[playlistID])

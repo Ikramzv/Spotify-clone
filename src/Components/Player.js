@@ -5,6 +5,7 @@ import './styles/Player.css'
 import Sidebar from "./Sidebar";
 import { useDateLayerValue } from "../appState/DataLayer";
 import { useNavigate } from "react-router-dom";
+import RecentlyPlayed from "./RecentlyPlayed";
 
 function Player({ spotify }) {
 
@@ -21,7 +22,7 @@ function Player({ spotify }) {
         <div className="player">
             <div className="player_body" >
                 <Sidebar />
-                <Body spotify={ spotify } />
+                <RecentlyPlayed />
                 <Footer />
             </div>
         </div>

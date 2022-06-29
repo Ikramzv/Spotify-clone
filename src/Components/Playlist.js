@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react'
+import React, { useCallback, useEffect, useMemo } from 'react'
 import Body from "./Body";
 import Footer from "./Footer";
 import './styles/Player.css'
@@ -21,7 +21,7 @@ function Playlist({ spotify }) {
     
     useEffect(() => {
         return memoize
-    })
+    } , [])
 
     return (
     <div className="player">
