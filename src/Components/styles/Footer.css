@@ -1,0 +1,124 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_left {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 300px;
+}
+
+.footer_right .MuiSlider-root {
+    color: rgb(44, 128, 44) !important;
+}
+
+.footer_album_logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.footerSong_info > p {
+    color: grey;
+}
+
+.footer_center {
+    flex: 0.4;
+    padding-inline: 100px;
+}
+
+.footer_center_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_center_icons > svg {
+    cursor: pointer;
+    color: white;
+}
+
+.footer_right {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_right_grid > * {
+    cursor: pointer;
+}
+
+.footer_green {
+    color: rgb(13, 132, 13) !important;
+}
+
+.footer_icon ,
+.footer_green,
+.footer_large_icon {
+    transition: 0.2s ease-in-out !important;
+}
+
+.footer_icon:hover ,
+.footer_green:hover {
+    transform: scale(1.2) !important;
+}
+
+.footer_green:hover {
+    color: rgba(0, 128, 0, 0.73) !important;
+}
+
+.footer_icon:hover,
+.footer_large_icon:hover {
+    color: rgba(255, 255, 255, 0.555) !important;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        height: 150px;
+        flex-wrap: wrap;
+        padding: 10px 20px 0;
+    }
+
+    .footer_left {
+        flex-basis: 40%;
+    }
+    .footer_center {
+        flex: auto;
+        padding: 0;
+    }
+
+    .footer_center_icons {
+        width: 100%;
+    }
+
+    .footerSong_info > * {
+        line-height: 1.2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .footer_right {
+        flex: 1 1 50%;
+        max-height: 30px;
+    }
+}

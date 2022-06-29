@@ -1,0 +1,46 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-color: black;
+    pointer-events: none;
+}
+
+.login img {
+    width: 800px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.login > a {
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 99px;
+    background-color: #1db954;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 350ms ease;
+}
+
+.login > a:hover {
+    background-color: #1db95489;
+}
+
+@media (max-width: 768px) {
+    .login img {
+        width: 500px;
+        height: 200px;
+    }
+
+    .login > a {
+        padding: 15px;
+    }
+}

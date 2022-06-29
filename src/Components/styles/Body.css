@@ -1,0 +1,80 @@
+.body {
+    padding: 30px;
+    padding-bottom: 130px;
+    flex: 0.8;
+    background: linear-gradient(rgb(91,87,115) , rgba(0,0,0));
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    position: relative;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.body::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.393);
+    bottom: 50px;
+    left: 30px;
+    right: 30px;
+}
+
+.body_info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body_info_image {
+    width: 17vw;
+    height: 25vh;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 20px;
+    box-shadow: 10px 13px 10px -10px black;
+}
+
+.body_infoText {
+    flex: 1;
+}
+
+.body_infoText > h2 {
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+.body_infoText > p {
+    font-size: 14px;
+}
+
+.body_songs {
+    margin: 20px -30px;
+}
+
+.body_icons {
+    display: flex;
+    align-items: center;
+}
+
+.body_shuffle {
+    font-size: 80px !important;
+    margin: 20px 0 20px 50px;
+    transition: 100ms transform ease-in !important;
+}
+
+.body_shuffle:hover {
+    transform: scale(1.08);
+}
+
+.body_icons > svg {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.body_icons > svg:first-child {
+    color: rgb(113, 254, 113);
+}

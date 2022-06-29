@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { DataLayer } from './appState/DataLayer';
+import reducer , { initialState } from './appState/reducer';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <DataLayer initialState = { initialState } reducer = { reducer } >
+        <App />
+      </DataLayer>
+    </Router>
   </React.StrictMode>
 );
 
