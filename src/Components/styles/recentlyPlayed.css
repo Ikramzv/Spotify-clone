@@ -57,7 +57,8 @@
 
 .song_container:hover {
     background: rgba(0,0,0 ,0.1);
-    transform: rotateY(10deg) translateZ(10px) ;
+    transform: rotateY(10deg) translateZ(10px);
+    -webkit-box-reflect: right 0px linear-gradient(to right , transparent , transparent , rgba(17, 17, 17, 0.359)) ;
 }
 
 .song_container > img {

@@ -1,4 +1,22 @@
-.player_body {
+.player {
     padding-left: 230px;
     padding-bottom: 100px;
+}
+
+.player_body {
+    height: calc(100vh - 100px);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.player_body::-webkit-scrollbar {
+    width: 8px;
+}
+.player_body::-webkit-scrollbar-track {
+    background: linear-gradient(rgb(51, 49, 64) , rgba(0,0,0));
+}
+.player_body::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.475);
+    border-radius: 10px;
 }
